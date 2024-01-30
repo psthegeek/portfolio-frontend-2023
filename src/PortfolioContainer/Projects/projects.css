@@ -1,0 +1,15 @@
+.projects-container{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  min-height: fit-content;
+  margin: 120px 0;
+}
+
+.projects-parent{
+    max-width: 1000px;
+  width: 70%;
+  height: 100vh;
+  background-color: yellow;
+}
