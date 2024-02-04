@@ -53,13 +53,13 @@
   border-radius: 50%;
   height: 380px;
   width: 380px;
-  margin: 0 0px 0 100px;
+  margin: 0 20px 0 40px;
 }
 .profile-picture-background {
   height: 92%;
   width: 92%;
   border-radius: 50%;
-  background-image: url("../../../assets/Home//profilephoto.png");
+  background-image: url("../../../assets/Home//profilephoto.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

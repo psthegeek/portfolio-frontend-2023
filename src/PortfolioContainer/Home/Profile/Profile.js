@@ -7,6 +7,9 @@ export default function Profile() {
   return (
     <div className="profile-container">
       <div className="profile-parent">
+      <div className="profile-picture">
+          <div className="profile-picture-background"></div>
+        </div>
         <div className="profile-details">
           <div className="colz">
             <div className="colz-icon">
@@ -63,14 +66,12 @@ export default function Profile() {
             <button className="btn primary-btn"
             onClick={() => ScrollService.scrollHandler.scrollToHireMe()}
             > Hire Me </button>
-            <a href="ehizcv.pdf" download="Ehiedu Ehizcv.pdf">
+            <a href="Preetisingh-resume102.pdf" download="Preeti Resume.pdf">
               <button className="btn highlighted-btn">Get Resume</button>
             </a>
           </div>
         </div>
-        <div className="profile-picture">
-          <div className="profile-picture-background"></div>
-        </div>
+       
       </div>
     </div>
   );
