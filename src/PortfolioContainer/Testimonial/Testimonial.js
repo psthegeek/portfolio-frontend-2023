@@ -7,10 +7,13 @@ import ScreenHeading from "../../utilities/ScreenHeading/ScreenHeading";
 import ScrollService from "../../utilities/ScrollService";
 import Animations from "../../utilities/Animations";
 import "./Testimonial.css";
-import lady from "../../../src/img/Testimonial/lady.png";
-import mike from "../../../src/img/Testimonial/mike.png";
-import man from "../../../src/img/Testimonial/man.png";
-import shape from "../../../src/img/Testimonial/shape-bg.png";
+import ayush from "../../../src/img/Testimonial/Ayush-Tyagi.png";
+import chaurasia from "../../../src/img/Testimonial/Chaurasia.png";
+import deepak from "../../../src/img/Testimonial/Deepak.png";
+import drona from "../../../src/img/Testimonial/Drona.png";
+import shubham from "../../../src/img/Testimonial/Shubham.png";
+import Taufiq from "../../../src/img/Testimonial/Taufiq-ahmad.png";
+import shape from "../../../src/img/Testimonial/shape-bg.png"
 
 export default function Testimonial(props) {
   let fadeInScreenHandler = (screen) => {
@@ -62,9 +65,7 @@ export default function Testimonial(props) {
                   <div className="testi-comment">
                     <p>
                       <i className="fa fa-quote-left" />
-                      I patronized Ehizeex and when He delivered, I honestly
-                      fell in love with the project He is a very honest guy and
-                      he delivers ontime.
+                      I've worked on a complex project with her. She is a great problem solver.She takes her task very seriously and delivers it on time. Preeti is by far one of the best hires I've ever made through Upwork.
                       <i className="fa fa-quote-right" />
                     </p>
                     <ul className="stars list-unstyled">
@@ -86,9 +87,9 @@ export default function Testimonial(props) {
                     </ul>
                   </div>
                   <div className="client-info">
-                    <img src={lady} alt="no internet connection"></img>
-                    <h5>Daisy Dominic</h5>
-                    <p>CEO InansGlobal</p>
+                    <img src={drona} alt="no internet connection"></img>
+                    <h5>Drona Tomar</h5>
+                    <p>Senior Software Engineer</p>
                   </div>
                 </div>
               </div>
@@ -98,9 +99,7 @@ export default function Testimonial(props) {
                   <div className="testi-comment">
                     <p>
                       <i className="fa fa-quote-left" />
-                      It was nice hiring this guy for my e-commerce project.He
-                      delivered even more than i can imagine. I recommend him
-                      for you.
+                      Preeti is a very talented girl. I have worked with her for 2 years. She always delievers best. She has created so many websites for my clients. It was wonderful working with Preeti.
                       <i className="fa fa-quote-right" />
                     </p>
                     <ul className="stars list-unstyled">
@@ -122,9 +121,44 @@ export default function Testimonial(props) {
                     </ul>
                   </div>
                   <div className="client-info">
-                    <img src={mike} alt="no internet connection"></img>
-                    <h5>Mikel</h5>
-                    <p>CEO MikeTech</p>
+                    <img src={deepak} alt="no internet connection"></img>
+                    <h5>DeepaK Gusain</h5>
+                    <p>Digital Marketer</p>
+                  </div>
+                </div>
+              </div>
+
+
+              <div className="col-lg-12">
+                <div className="testi-item">
+                  <div className="testi-comment">
+                    <p>
+                      <i className="fa fa-quote-left" />
+                      Working with Preeti is consistently a pleasure. She takes static comps and always breathes life into them with animations and interactivity. She provides high quality of work.
+                      <i className="fa fa-quote-right" />
+                    </p>
+                    <ul className="stars list-unstyled">
+                      <li>
+                        <i className="fa fa-star" />
+                      </li>
+                      <li>
+                        <i className="fa fa-star" />
+                      </li>
+                      <li>
+                        <i className="fa fa-star" />
+                      </li>
+                      <li>
+                        <i className="fa fa-star-half-alt" />
+                      </li>
+                      <li>
+                        <i className="fa fa-star" />
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="client-info">
+                    <img src={ayush} alt="no internet connection"></img>
+                    <h5>Ayush Tyagi</h5>
+                    <p>Businessman</p>
                   </div>
                 </div>
               </div>
@@ -133,9 +167,9 @@ export default function Testimonial(props) {
                   <div className="testi-comment">
                     <p>
                       <i className="fa fa-quote-left" />
-                      When he delivered my job, my head spinned, it was so nice
-                      and he implemented every functionality i requested for.
-                      Thank you.
+                      This girl is incredibly awesome, I hired her and when She
+                      delivered, I honestly fell in love with the project. She is
+                      indeed a great and honest girl and she delivers ontime.
                       <i className="fa fa-quote-right" />
                     </p>
                     <ul className="stars list-unstyled">
@@ -157,9 +191,9 @@ export default function Testimonial(props) {
                     </ul>
                   </div>
                   <div className="client-info">
-                    <img src={lady} alt="no internet connection"></img>
-                    <h5>Daisy Dominic</h5>
-                    <p>CEO InansGlobal</p>
+                    <img src={chaurasia} alt="no internet connection"></img>
+                    <h5>Shubham Chaurasia</h5>
+                    <p>Digital Marketing Manager</p>
                   </div>
                 </div>
               </div>
@@ -168,9 +202,7 @@ export default function Testimonial(props) {
                   <div className="testi-comment">
                     <p>
                       <i className="fa fa-quote-left" />
-                      This guy is incredibly awesome, I hired him and when He
-                      delivered, I honestly fell in love with the project. He is
-                      indeed a great guy,
+                      Preeti is a fantastic and dedicated front-end developer to work with; She is able to quickly and concisely identify issues within project objectives.It was great working with her.
                       <i className="fa fa-quote-right" />
                     </p>
                     <ul className="stars list-unstyled">
@@ -192,9 +224,42 @@ export default function Testimonial(props) {
                     </ul>
                   </div>
                   <div className="client-info">
-                    <img src={man} alt="no internet connection"></img>
-                    <h5>John Smith</h5>
-                    <p>Bnaker</p>
+                    <img src={Taufiq} alt="no internet connection"></img>
+                    <h5>Taufiq Ahmad</h5>
+                    <p>Researcher</p>
+                  </div>
+                </div>
+              </div>
+              <div className="col-lg-12">
+                <div className="testi-item">
+                  <div className="testi-comment">
+                    <p>
+                      <i className="fa fa-quote-left" />
+                      Preeti is a very talented Developer, but also a lot more than that - her ability to grasp things with a fresh pair of eyes is great, and she has the seniority to project manage everything herself. brilliant!
+                      <i className="fa fa-quote-right" />
+                    </p>
+                    <ul className="stars list-unstyled">
+                      <li>
+                        <i className="fa fa-star" />
+                      </li>
+                      <li>
+                        <i className="fa fa-star" />
+                      </li>
+                      <li>
+                        <i className="fa fa-star" />
+                      </li>
+                      <li>
+                        <i className="fa fa-star-half-alt" />
+                      </li>
+                      <li>
+                        <i className="fa fa-star" />
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="client-info">
+                    <img src={shubham} alt="no internet connection"></img>
+                    <h5>Shubham Singh</h5>
+                    <p>Senior Software Engineer</p>
                   </div>
                 </div>
               </div>
@@ -203,7 +268,7 @@ export default function Testimonial(props) {
         </div>
       </section>
       <div className="footer-image">
-        <img src={shape} alt="Phot0 not responding" />
+        <img src={shape} alt="Photo not responding" />
       </div>
     </div>
   );
