@@ -63,7 +63,7 @@ export default function Profile() {
             <button className="btn primary-btn"
             onClick={() => ScrollService.scrollHandler.scrollToHireMe()}
             > Hire Me </button>
-            <a href="itsPreetiResume_101.pdf" download="Preeti Resume.pdf">
+            <a href="PreetiSResume101.pdf" download="Preeti Resume.pdf">
               <button className="btn highlighted-btn">Get Resume</button>
             </a>
           </div>
@@ -71,7 +71,9 @@ export default function Profile() {
         <div className="profile-picture">
           <div className="profile-picture-background"></div>
         </div>
+
        
+      
       </div>
     </div>
   );

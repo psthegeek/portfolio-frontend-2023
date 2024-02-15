@@ -36,8 +36,28 @@ const Resume = (props) => {
           <span>{props.subHeading ? props.subHeading : ""}</span>
         </div>
         <div className="resume-heading-description">
-          <span>{props.description ? props.description : ""}</span>
+            {/* <span>{props.description? props.description : ""}</span>
+             */}
+             
+             <span>
+              {
+                props.description ? props.description.map((data, id) => (
+                  <div key={data.id}>
+                       {
+                        data.projectData?.map((item,index) => (
+                          <ul>
+                            <li>- {item}</li>
+                          </ul>
+                        ))
+                       }
+                  </div>
+            
+                )) : ""
+              }             
+            </span>
+             
         </div>
+        <br />
       </div>
     );
   };
@@ -59,35 +79,110 @@ const Resume = (props) => {
     { skill: "Node JS", ratingPercentage: 89 },
     { skill: "Mongo Db/SQL", ratingPercentage: 70 },
     { skill: "HTML/CSS", ratingPercentage: 80 },
+    { skill: "GraphQL", ratingPercentage: 50 },
     { skill: "Problem Solver", ratingPercentage: 80 },
     { skill: "Python", ratingPercentage: 85 },
     { skill: "Core Java", ratingPercentage: 60 },
+    { skill: "C/C++", ratingPercentage: 60 },
     { skill: "Linux", ratingPercentage: 60 },
   ];
 
   const projectsDetails = [
     {
-      title: "Personal Portfolio Website",
-      duration: { fromDate: "2020", toDate: "2021" },
-      description:
-        "A Personal Portfolio website to showcase all my details and projects at one place.",
-      subHeading: "Technologies Used: React JS, Bootsrap",
+      id:1,
+      title: "Propplayers-V2",
+      duration: { fromDate: "Feb 2023", toDate: "Dec 2023" },
+      description: [
+        {
+          projectId: 1,
+          projectData: [
+            "A medium to connect buyers and sellers according to their needs to find a great deal in the real estate market.",
+            "Used React JS for templating for faster compilation and developing reusable components, Redux for state management , and writing APIs in Nodejs serving data for frontend, tailwind CSS for designing and responsiveness and Trello for Task Management",
+            "To fetch specific details for properties used GraphQL queries and Apollo Client GraphQL library",
+            "Worked on authentication , authorization with refresh tokens and route protection(both server and client) using JWT",
+            "Integration front-end development with back-end system, Called the RESTful web services calls for POST,PUT,GET,DELETE Methods",
+            "Created user dashboard for both buyers and sellers with ads update, delete and load more feature, implemented the Drag and Drop functionality using React-Draggable,and used flickity is for creating carousel-images",
+            "Added advance search with multiple filters including geolocation, multiple image upload with AWS S3",
+            "Worked on sellers’ public profile to fetch all real estate agent with public profile.",
+            "User registration and login with Email Configuration using AWS SES (server)",
+            "worked with backend engineers to optimize existing API calls to create efficiencies by deprecating unneeded API calls"
+          ]
+        }
+        
+      ],
+      subHeading: "Skills: ReactJs| Nodejs| Redux | MERN |JEST | Tailwind | GraphQL | AWS S3,IAM,SES |RESTful API",
     },
     {
-      title: "Mobile E-shop ",
-      duration: { fromDate: "2020", toDate: "2021" },
-      description:
-        "An ecommerce application designed to sell products online wth payment system integration",
+      id:2,
+      title: "Mrkt365",
+      duration: { fromDate: "Aug 2022", toDate: "Feb 2023" },
+      description: [
+          {
+            projectId:2,
+            projectData: [
+              "Worked on the company's main product and optimized code.",
+      "A marketplace to connect freelancers and interns, Businesses with Businesses.",
+      "Developed various screens for front end part of many components using various predefined modules from npm and build scalable and reusable components using ReactJS and redux for state management, typescript for type safety and tailwind for styling.",
+      "Handled cross browser/platform compatibility issues(IE, Firefox) on both windows."
+            ],
+          }
+
+      ],   
       subHeading:
-        "Technologies Used:  React Native, Mongo DB, Express Js, Node Js, Redux.",
+        "Skills: ReactJS |Redux | NextJS| Tailwind| JEST",
     },
     {
-      title: "Ecommerce Website ",
-      duration: { fromDate: "2020", toDate: "2021" },
-      description:
-        "Online ecommerce website for showcasing and selling products onlne with payment system integration, both Paypal and Stripe",
+      id:3,
+      title: "Video Streaming Platform",
+      duration: { fromDate: "Jan 2021", toDate: "Jul 2022" },
+      description: [{
+        projectId:3,
+        projectData:[
+          "A video streaming platform for a teacher having a bunch of students connected with him online.",
+            "Handled, debugged, and maintained frontend of this project using ReactJS, NextJs and Tailwind CSS. for more than a year with a senior backend developer",
+"One of the standout features of this app is the search function, which not only provides suggestions as you type, but also includes debouncing to reduce the number of API calls made, resulting in improved performance and live chat feature that utilizes API polling to ensure efficient performance.",
+"The app is smart enough to remove older comments from the chat to avoid app freezing when a lot of chat has taken place. Users can add comments to the chat in real-time.",
+"To fetch videos, I used the APIs provided by the backend developer, and for video playback, I incorporated iframes. The app also supports n-level nested comments."
+        ],
+      }],
       subHeading:
-        "Technologies Used: Mongo DB, Epress Js, React Js, Node JS, Redux, Bootstrap.",
+        "Skills: ReactJS |NextJS| Tailwind",
+    },
+    {
+      id:4,
+      title: "CoreFitPlus",
+      duration: { fromDate: "Oct 2021", toDate: "Dec 2023" },
+      description:
+      [{
+        projectId:4,
+        projectData:[
+          "A gym website initially created using wordpress then later on developed again using ReactJs.",
+  "Developed and maintained this website individually. Improved performance over the time."],
+      }],
+      
+      subHeading:
+        "Skills : HTML | CSS| JS| ReactJS",
+    },
+    {
+      id:5,
+      title: "Sg-lifestyle",
+      duration: { fromDate: "2020", toDate: "2021" },
+      description:[
+        {
+          projectId:5,
+          projectData: [
+            "Developed and maintained a WordPress ecommerce website using WooCommerce,",
+            "Implemented product catalog management, including product descriptions, images, and pricing, Configured payment gateways and shipping methods,",
+            "Design a streamlined order processing workflow that guides customers through the checkout process seamlessly,",
+            "Integrate secure payment gateways to accept online payments from various credit cards and digital wallets,",
+            "Provide order tracking and status updates to keep customers informed about their purchases,",
+            "Provided ongoing website maintenance and support."],
+    
+        }
+        
+      ],
+            subHeading:
+        "Skills : HTML5 |CSS | JS | Wordpress | AJAX | PHP",
     },
   ];
 
@@ -119,64 +214,66 @@ const Resume = (props) => {
       <div className="experience-container">
         <ResumeHeading
           heading={"PropPlayers Infrastructure Pvt. Ltd."}
-          subHeading={"Software Engineer"}
-          fromDate={"2021"}
+          subHeading={"Software Engineer (Full Time)"}
+          fromDate={"Feb 2022"}
           toDate={"Present"}
         />
         <div className="experience-description">
           <span className="resume-description-text">
-            Currently working as Full Stack Developer.
-          </span>
-        </div>
-        <div className="experience-description">
-          <span className="resume-description-text">
-            - Developed an ecommerce website for client with the dashboard for
-            managing the products, managing reviews, users, payment etc. .
+          - Worked on a full stack application where I was responsible for both Frontend and Backend following the Agile model.
           </span>
           <br />
           <span className="resume-description-text">
-            - Integrated the web app with backend services to create new user
-            onboarding application with dynamic form content.{" "}
+          - Contributed to the continual improvement of the design and development process, maintaining strong aspects while
+researching and providing recommendations for areas of improvement.
           </span>
           <br />
           <span className="resume-description-text">
-            - I stretch my mental capacity to develope UI as per the given
-            designs.
-          </span>     
+          - Identified web-based user interactions and developed highly-responsive user interface components via React concepts
+          </span>
+          <br />
         </div>
         <hr />
+        <br />
         <ResumeHeading
           heading={"Highbreed Development India Pvt. Ltd."}
-          subHeading={"Software Developer Intern"}
-          fromDate={"Aug 2021"}
+          subHeading={"Front End Developer(Intern)"}
+          fromDate={"Aug 2022"}
           toDate={"Feb 2023"}
         />
-          
-
+           <span className="resume-description-text">
+          - Worked as part of the core platform team
+          </span>
+           <span className="resume-description-text">
+          - Collaborated with senior team members to upgrade the website and worked on an Agile (Scrum) Development Team to deliver regular updates to business team and
+project managers and provided end-to-end solutions for clients.
+          </span>
+           <span className="resume-description-text">
+          - Used Jira for Task Management
+          </span>
           <hr/>
+          <br />
          <ResumeHeading
           heading={"Freelancer"}
           subHeading={"Web Developer"}
-          fromDate={"July 2021"}
+          fromDate={"Jan 2021"}
           toDate={"July 2022"}
         />
           <div className="experience-description">
           <span className="resume-description-text">
-            - Developed an ecommerce website for client with the dashboard for
-            managing the products, managing reviews, users, payment etc. .
+            - Designed, developed and maintained 15+ static websites for multiple clients.
           </span>
           <br />
           <span className="resume-description-text">
-            - Integrated the web app with backend services to create new user
-            onboarding application with dynamic form content.{" "}
+            -Worked on <b>3 major</b> projects individually as well as with a team.
           </span>
           <br />
           <span className="resume-description-text">
-            - I stretch my mental capacity to develope UI as per the given
-            designs.
+            - Preparing for IB & UPSC.
           </span>     
         </div>
          <hr/>
+         <br />
          <ResumeHeading
           heading={"Freelancer"}
           subHeading={"Content Writer/ Moderator"}
@@ -242,6 +339,7 @@ Optimized content for search engines (SEO){" "}
 
     /* PROJECTS */
     <div className="resume-screen-container" key="projects">
+      <div className="experience-container">
       {projectsDetails.map((projectsDetails, index) => (
         <ResumeHeading
           key={index}
@@ -252,21 +350,25 @@ Optimized content for search engines (SEO){" "}
           toDate={projectsDetails.duration.toDate}
         />
       ))}
+      </div>
     </div>,
 
     /* Interests */
     <div className="resume-screen-container" key="interests">
       <ResumeHeading
-        heading="Teaching"
-        description="Apart from being a tech enthusiast and a code writer, i also love to teach people what i know simply because i believe in sharing."
+        heading="Software Development"
+      />
+      <ResumeHeading
+        heading="Problem Solving"
+      />
+      <ResumeHeading
+        heading="Reading"
+      />
+      <ResumeHeading
+        heading="Writing"
       />
       <ResumeHeading
         heading="Music"
-        description="Listening to soothing music is something i can never compromise with, skimming through Spotify's pop songs charts is at times the best stress reliever that i can get my hands on."
-      />
-      <ResumeHeading
-        heading="Competitive Gaming"
-        description="I like to challenge my reflexes a lot while competing in football games, pushing the rank and having interactive gaming sessions excites me the most."
       />
     </div>,
   ];
