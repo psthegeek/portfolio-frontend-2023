@@ -1,84 +1,153 @@
 const Experience = [
-    {
-        id:1,
-        title: "Content Writer/Moderator",
-        jobType: "Freelancer",
-        skills: [
-            "Research skills", "Writing proficiency", "Adaptability", "Time Management", "Creativity", "Critical thinking","Editing and proofreading", "Decision Makeing Skills", "Communication Skills"
+  {
+    id: 1,
+    title: "Content Writer/Moderator",
+    workPlace: "Self Employed",
+    jobType: "Freelancer",
+    startDate: "Oct 2017",
+    endDate: "Dec 2022",
+    skills: [
+      "Research skills",
+      "Writing proficiency",
+      "Adaptability",
+      "Time Management",
+      "Creativity",
+      "Critical thinking",
+      "Editing and proofreading",
+      "Decision Making Skills",
+      "Communication Skills",
+    ],
+    responsibilities: [
+      "Created and edited high-quality content for a variety of audiences, including blog posts, articles, social media posts, and website copy",
+      "Developed and implemented content strategies to increase website traffic and engagement",
+      "Optimized content for search engines (SEO)",
+      "Researched and wrote about a wide range of topics, including technology, business, and current events",
+      "Monitored and moderated user-generated content on social media, forums, and other online platforms",
+      "Enforced community guidelines and removed inappropriate content",
+      "Escalated potential safety or security risks to appropriate teams",
+      "Developed a content calendar to ensure consistent publishing and maintained a high editorial standard, resulting in increased reader engagement and retention",
+      "Utilized analytics tools to track content performance, identify trends, and make data-driven decisions to enhance content strategy and user experience",
+    ],
+  },
+  {
+    id: 2,
+    title: "Web Developer",
+    jobType: "Freelancer",
+    startDate: "Jan 2021",
+    EndDate: "Jul 2022",
+    skills: [
+      "Wordpress",
+      "WooCommerce",
+      "Ajax",
+      "HTML",
+      "CSS",
+      "Javascript",
+      "PHP",
+      "MySQL",
+      "WooCommerce",
+      "Project Management",
+    ],
+    workDetails: [
+      {
+        id: 1,
+        projectName: "sg-lifestyle.com",
+        projectDetails: [
+          "Developed and maintained a WordPress ecommerce website using WooCommerce.",
+          "Implemented product catalog management, including product descriptions, images, and pricing",
+          "Configured payment gateways and shipping methods.",
+          "Design a streamlined order processing workflow that guides customers through the checkout process seamlessly",
+          "Integrate secure payment gateways to accept online payments from various credit cards and digital wallets.",
+          "Provide order tracking and status updates to keep customers informed about their purchases.",
+          "Set up tax rates and shipping calculations.",
+          "Managed customer orders and inquiries.",
+          "Provided ongoing website maintenance and support.",
         ],
-        workDetails: [
-            "Created and edited high-quality content for a variety of audiences, including blog posts, articles, social media posts, and website copy",
-            "Developed and implemented content strategies to increase website traffic and engagement",
-            "Optimized content for search engines (SEO)",
-            "Researched and wrote about a wide range of topics, including technology, business, and current events",
-            "Monitored and moderated user-generated content on social media, forums, and other online platforms",
-            "Enforced community guidelines and removed inappropriate content",
-            "Escalated potential safety or security risks to appropriate teams",
-            "Developed a content calendar to ensure consistent publishing and maintained a high editorial standard, resulting in increased reader engagement and retention",
-            "Utilized analytics tools to track content performance, identify trends, and make data-driven decisions to enhance content strategy and user experience",
-        ]
-    },
-    {
-        id:2,
-        title: "Web Developer",
-        jobType: "Freelancer",
-        skills: [
-            "Wordpress","WooCommerce", "Ajax", "HTML", "CSS", "Javascript", "PHP", "MySQL", "WooCommerce", "Project Management"
+      },
+    ],
+  },
+  {
+    id: 3,
+    title: "Front End Developer",
+    workPlace: "Highbreed Corp",
+    jobType: "Internship",
+    startDate: "Aug 2022",
+    EndDate: "Feb 2023",
+    skills: [
+      "ReactJS",
+      "NextJS",
+      "HTML",
+      "CSS",
+      "Javascript",
+      "Git/GitBash",
+      "Github",
+      "Jest",
+      "Problem-solving and analytical skills",
+      "UI/UX design principles",
+      "Experience with agile development methodologies",
+      "Jira",
+    ],
+    responsibilities: [
+      "Worked as part of the core platform team",
+      "Collaborated with senior team members to upgrade the website and worked on an Agile (Scrum) Development Team to deliver regular updates to business team and project managers and provided end-to-end solutions for clients.",
+      "Designed and implemented front-end enhancements to guarantee optimal functionality and user experience.",
+      "Used Jira for Task Management",
+    ],
+    projects: [
+      {
+        id: 1,
+        projectTitle: "Mrkt365",
+        timeline: "",
+        projectDetails: [
+          "Worked on the company's main product and optimized code.",
+          "Developed various screens for front end part of many components using various predefined modules from npm and build scalable and reusable components using ReactJS and redux for state management, typescript for type safety and tailwind for styling.",
+          "Handled cross browser/platform compatibility issues(IE, Firefox) on both windows.",
         ],
-        workDetails: [
-                {
-                    id:1,
-                    projectName: "sg-lifestyle.com",
-                    projectDetails: [
-                        "Developed and maintained a WordPress ecommerce website using WooCommerce.",
-                        "Implemented product catalog management, including product descriptions, images, and pricing",
-                        "Configured payment gateways and shipping methods.",
-                        "Design a streamlined order processing workflow that guides customers through the checkout process seamlessly",
-                        "Integrate secure payment gateways to accept online payments from various credit cards and digital wallets.",
-                        "Provide order tracking and status updates to keep customers informed about their purchases.",
-                        "Set up tax rates and shipping calculations.",
-                        "Managed customer orders and inquiries.",
-                        "Provided ongoing website maintenance and support."
-                    ],
-                }
-            ]
-                    
-            
+      },
+    ],
+  },
+  {
+    id: 4,
+    title: "Software Engineer",
+    workPlace: "Self Employed",
+    jobType: "Freelancer",
+    startDate: "Feb 2022",
+    EndDate: "Dec 2023",
+    techStack: [
+      "ReactJs",
+      "NodeJs",
+      "MERN",
+      "MongoDB",
+      "Tailwind",
+      "GraphQL",
+      "JEST",
+      "AWS S3,IAM,SES",
+      "RESTful API",
+      "Trello",
+      "Github",
+    ],
+    responsibilities: [
+      "Worked on a full stack application where I was responsible for both Frontend and Backend following the Agile model.",
+      "Conducted testing, installation, configuration and troubleshooting within one week of joining the team.",
+      "Suggested, discussed and developed features to add in the project.",
+      "Contributed to the continual improvement of the design and development process, maintaining strong aspects while researching and providing recommendations for areas of improvement.",
+      "Identified web-based user interactions and developed highly-responsive user interface components via React concepts",
+    ],
+    projects: [
+        {
+          ProjectId: 1,
+          projectTitle: "PropplayersV2",
+          timeline: "",
+          projectDetails: [
+            "Worked on the company's main product and optimized code.",
+            "Developed various screens for front end part of many components using various predefined modules from npm and build scalable and reusable components using ReactJS and redux for state management, typescript for type safety and tailwind for styling.",
+            "Handled cross browser/platform compatibility issues(IE, Firefox) on both windows.",
+          ],
         },
-    {
-        id:3,
-        title: "Front End Developer",
-        skills: [
-            "ReactJS", "NextJS", "HTML", "CSS", "Javascript", "Git/GitBash", "Github", "Jest", "Problem-solving and analytical skills","UI/UX design principles", "Experience with agile development methodologies" , "Jira" 
-        ],
-        workDetails: [
-                {
-                    id:1,
-                    projectName: "mrkt365.com",
-                    projectDetails: [
-                        ""
-                    ]
-                }
-        ]
-    },
-    {
-        id:4,
-        title: "",
-        techStack: [
-            "", ""
-        ],
-        workDetails: [
+      ],
+  },
+];
 
-        ]
-    }
-]
+const projects = [];
 
+export { Experience, projects };
 
-const projects = [
-    {
-        id:1,
-        projectName: ""
-    }
-]
-
-export {Experience, projects}

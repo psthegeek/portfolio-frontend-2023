@@ -14,6 +14,10 @@ import drona from "../../../src/img/Testimonial/Drona.png";
 import shubham from "../../../src/img/Testimonial/Shubham.png";
 import Taufiq from "../../../src/img/Testimonial/Taufiq-ahmad.png";
 import shape from "../../../src/img/Testimonial/shape-bg.png"
+import ashwini from "../../../src/img/Testimonial/ashwini.png"
+import puri from "../../../src/img/Testimonial/shubhampuri.png"
+import laxman from "../../../src/img/Testimonial/laxman.png"
+
 
 export default function Testimonial(props) {
   let fadeInScreenHandler = (screen) => {
@@ -32,7 +36,7 @@ export default function Testimonial(props) {
     animateOut: "bounceOutRight",
     dots: true,
     autoplay: true,
-    smartSpeed: 5000,
+    smartSpeed: 1000,
     responsive: {
       0: {
         items: 1,
@@ -235,6 +239,76 @@ export default function Testimonial(props) {
                   <div className="testi-comment">
                     <p>
                       <i className="fa fa-quote-left" />
+                      A talented Deeveloper who delivers excellence every time. Impressive attention to detail! Efficient, responsive, and a joy to work with. 
+                      <i className="fa fa-quote-right" />
+                    </p>
+                    <ul className="stars list-unstyled">
+                      <li>
+                        <i className="fa fa-star" />
+                      </li>
+                      <li>
+                        <i className="fa fa-star" />
+                      </li>
+                      <li>
+                        <i className="fa fa-star" />
+                      </li>
+                      <li>
+                        <i className="fa fa-star-half-alt" />
+                      </li>
+                      <li>
+                        <i className="fa fa-star" />
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="client-info">
+                    <img src={ashwini} alt="no internet connection"></img>
+                    <h5>Ashwini Chandola</h5>
+                    <p>GPU DESIGN VERIFICATION ENGINEER(Intel)</p>
+                  </div>
+                </div>
+              </div>
+              <div className="col-lg-12">
+                <div className="testi-item">
+                  <div className="testi-comment">
+                    <p>
+                      <i className="fa fa-quote-left" />
+                      Brilliant problem solver with a keen sense of user experience. Her code is as clean as her communication. A front-end wizard!
+                      <i className="fa fa-quote-right" />
+                    </p>
+                    <ul className="stars list-unstyled">
+                      <li>
+                        <i className="fa fa-star" />
+                      </li>
+                      <li>
+                        <i className="fa fa-star" />
+                      </li>
+                      <li>
+                        <i className="fa fa-star" />
+                      </li>
+                      <li>
+                        <i className="fa fa-star-half-alt" />
+                      </li>
+                      <li>
+                        <i className="fa fa-star" />
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="client-info">
+                    <img src={laxman} alt="no internet connection"></img>
+                    <h5>Laxman Singh</h5>
+                    <p>HIL Model Developer(BOSCH)</p>
+                    <p></p>
+                  </div>
+                </div>
+              </div>
+
+
+
+              <div className="col-lg-12">
+                <div className="testi-item">
+                  <div className="testi-comment">
+                    <p>
+                      <i className="fa fa-quote-left" />
                       Preeti is a very talented Developer, but also a lot more than that - her ability to grasp things with a fresh pair of eyes is great, and she has the seniority to project manage everything herself. brilliant!
                       <i className="fa fa-quote-right" />
                     </p>
@@ -263,12 +337,46 @@ export default function Testimonial(props) {
                   </div>
                 </div>
               </div>
+
+              <div className="col-lg-12">
+                <div className="testi-item">
+                  <div className="testi-comment">
+                    <p>
+                      <i className="fa fa-quote-left" />
+                      "A pleasure to collaborate with, bringing creativity and expertise to every project. Exceptional grasp of modern web technologies. Highly recommended!"
+                      <i className="fa fa-quote-right" />
+                    </p>
+                    <ul className="stars list-unstyled">
+                      <li>
+                        <i className="fa fa-star" />
+                      </li>
+                      <li>
+                        <i className="fa fa-star" />
+                      </li>
+                      <li>
+                        <i className="fa fa-star" />
+                      </li>
+                      <li>
+                        <i className="fa fa-star-half-alt" />
+                      </li>
+                      <li>
+                        <i className="fa fa-star" />
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="client-info">
+                    <img src={puri} alt="no internet connection"></img>
+                    <h5>Shubham Puri(Airbnb)</h5>
+                    <p></p>
+                  </div>
+                </div>
+              </div>
             </OwlCarousel>
           </div>
         </div>
       </section>
       <div className="footer-image">
-        <img src={shape} alt="Photo not responding" />
+        <img src={shape} alt="Not responding" />
       </div>
     </div>
   );
