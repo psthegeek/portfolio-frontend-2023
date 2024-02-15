@@ -14,7 +14,7 @@ import drona from "../../../src/img/Testimonial/Drona.png";
 import shubham from "../../../src/img/Testimonial/Shubham.png";
 import Taufiq from "../../../src/img/Testimonial/Taufiq-ahmad.png";
 import shape from "../../../src/img/Testimonial/shape-bg.png"
-import ashwini from "../../../src/img/Testimonial/ashwini.png"
+import ashwani from "../../../src/img/Testimonial/ashwini.png"
 import puri from "../../../src/img/Testimonial/shubhampuri.png"
 import laxman from "../../../src/img/Testimonial/laxman.png"
 
@@ -103,7 +103,7 @@ export default function Testimonial(props) {
                   <div className="testi-comment">
                     <p>
                       <i className="fa fa-quote-left" />
-                      Preeti is a very talented girl. I have worked with her for 2 years. She always delievers best. She has created so many websites for my clients. It was wonderful working with Preeti.
+                      Preeti is a very talented girl. I have worked with her for 2 years. She always delivers best. She has created so many websites for my clients. It was wonderful working with Preeti.
                       <i className="fa fa-quote-right" />
                     </p>
                     <ul className="stars list-unstyled">
@@ -239,7 +239,7 @@ export default function Testimonial(props) {
                   <div className="testi-comment">
                     <p>
                       <i className="fa fa-quote-left" />
-                      A talented Deeveloper who delivers excellence every time. Impressive attention to detail! Efficient, responsive, and a joy to work with. 
+                      A talented Developer who delivers excellence every time. Impressive attention to detail! Efficient, responsive, and a joy to work with. 
                       <i className="fa fa-quote-right" />
                     </p>
                     <ul className="stars list-unstyled">
@@ -261,8 +261,8 @@ export default function Testimonial(props) {
                     </ul>
                   </div>
                   <div className="client-info">
-                    <img src={ashwini} alt="no internet connection"></img>
-                    <h5>Ashwini Chandola</h5>
+                    <img src={ashwani} alt="no internet connection"></img>
+                    <h5>Ashwani Chandola</h5>
                     <p>GPU DESIGN VERIFICATION ENGINEER(Intel)</p>
                   </div>
                 </div>
@@ -366,8 +366,8 @@ export default function Testimonial(props) {
                   </div>
                   <div className="client-info">
                     <img src={puri} alt="no internet connection"></img>
-                    <h5>Shubham Puri(Airbnb)</h5>
-                    <p></p>
+                    <h5>Shubham Puri</h5>
+                    <p>SDE III(Airbnb)</p>
                   </div>
                 </div>
               </div>
